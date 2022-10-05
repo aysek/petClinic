@@ -8,5 +8,5 @@ import com.package1.entity.Owner;
 
 
 public interface OwnerRepository{
-	List<Owner> findAll();
+	List<Owner> findAll();////ölfjshfjksfhşasfjkasdif
 }
