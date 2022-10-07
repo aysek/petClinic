@@ -19,4 +19,9 @@ public class ImplPetClinic implements PetClinicService{
 	public List<Owner> findAll() {
 		return ownerRepository.findAll();
 	}
+
+	@Override
+	public Owner findOwner(Long id) {
+		return ownerRepository.findOwners(id);
+	}
 }

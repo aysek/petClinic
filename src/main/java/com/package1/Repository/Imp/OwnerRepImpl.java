@@ -45,4 +45,10 @@ public class OwnerRepImpl implements OwnerRepository {
 	public List<Owner> findAll() {
 		return new ArrayList<>(ownersMap.values());
 	}
+
+	@Override
+	public Owner findOwners(Long id) {
+		return ownersMap.get(id);
+	}
+
 }
