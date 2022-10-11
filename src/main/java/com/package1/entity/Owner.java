@@ -1,5 +1,8 @@
 package com.package1.entity;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+//@XmlRootElement//xml formatında görüntüleyebilmek için
 public class Owner {
 
 	private Long id;

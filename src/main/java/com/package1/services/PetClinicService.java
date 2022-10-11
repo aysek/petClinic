@@ -11,4 +11,6 @@ import org.springframework.stereotype.Service;
 public interface PetClinicService {
 	List<Owner> findAll();
 	Owner findOwner(Long id);
+	void createOwner(Owner owner);
+
 }

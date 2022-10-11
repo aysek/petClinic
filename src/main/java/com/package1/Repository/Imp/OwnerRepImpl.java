@@ -1,6 +1,7 @@
 package com.package1.Repository.Imp;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -49,6 +50,12 @@ public class OwnerRepImpl implements OwnerRepository {
 	@Override
 	public Owner findOwners(Long id) {
 		return ownersMap.get(id);
+	}
+
+	@Override
+	public void create(Owner owner) {
+		owner.setId(new Date().getTime());
+		ownersMap.put(owner.getId(),owner);
 	}
 
 }

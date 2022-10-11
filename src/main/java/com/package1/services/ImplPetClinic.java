@@ -24,4 +24,9 @@ public class ImplPetClinic implements PetClinicService{
 	public Owner findOwner(Long id) {
 		return ownerRepository.findOwners(id);
 	}
+
+	@Override
+	public void createOwner(Owner owner) {
+	ownerRepository.create(owner);
+	}
 }
