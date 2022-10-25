@@ -58,4 +58,9 @@ public class OwnerRepImpl implements OwnerRepository {
 		ownersMap.put(owner.getId(),owner);
 	}
 
+	@Override
+	public Owner findById(Long id) {
+		return null;
+	}
+
 }

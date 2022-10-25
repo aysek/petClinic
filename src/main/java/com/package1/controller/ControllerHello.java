@@ -26,6 +26,11 @@ public class ControllerHello {
 		mav.addObject("owners",owners);
 		mav.setViewName("owners");
 
+//veritabanı bağ oluştur
+//transaction başlatılır
+//statement yarat
+		//st üzerinden sql sorgusu çalıştır
+		//stmt sonucu dönen bir resultSet varsa bu bir döngü ile işlenir
 
 		return mav;
 	}

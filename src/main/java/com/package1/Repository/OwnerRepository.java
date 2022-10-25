@@ -8,5 +8,6 @@ public interface OwnerRepository{
 	List<Owner> findAll();
 	Owner findOwners(Long id);
 	void create(Owner owner);
+	Owner findById(Long id);
 
 }
