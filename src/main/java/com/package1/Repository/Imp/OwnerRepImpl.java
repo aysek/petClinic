@@ -63,4 +63,9 @@ public class OwnerRepImpl implements OwnerRepository {
 		return null;
 	}
 
+	@Override
+	public void delete(Long id) {
+
+	}
+
 }

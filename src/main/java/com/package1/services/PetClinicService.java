@@ -12,5 +12,6 @@ public interface PetClinicService {
 	List<Owner> findAll();
 	Owner findOwner(Long id);
 	void createOwner(Owner owner);
+	void deleteOwner(Long id);
 
 }

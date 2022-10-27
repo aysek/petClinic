@@ -30,6 +30,12 @@ public class OwnerRepJdbcImpl implements OwnerRepository {
 		}
 	};
 
+	//veritabanı bağ oluştur
+	//transaction başlatılır
+	//statement yarat
+	//st üzerinden sql sorgusu çalıştır
+	//stmt sonucu dönen bir resultSet varsa bu bir döngü ile işlenir
+
 	@Override
 	public List<Owner> findAll() {
 		String sql = "select id,first_name,last_name from owners";
@@ -50,5 +56,11 @@ public class OwnerRepJdbcImpl implements OwnerRepository {
 	public Owner findById(Long id) {
 		String sql = "select id,first_name,last_name from owners where id = ?";
 		return DataAccessUtils.singleResult(jdbcTemplate.query(sql,rowMapper,id));
+	}
+
+	@Override
+	public void delete(Long id) {
+		String sql = "delete from owner where id = ?";
+		jdbcTemplate.update(sql,id);
 	}
 }

@@ -1,7 +1,6 @@
 package com.package1.controller;
 
 import java.net.URI;
-import java.net.URL;
 import java.util.List;
 
 import com.package1.entity.Owner;

@@ -9,5 +9,6 @@ public interface OwnerRepository{
 	Owner findOwners(Long id);
 	void create(Owner owner);
 	Owner findById(Long id);
+	void delete(Long id);
 
 }
